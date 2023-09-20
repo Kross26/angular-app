@@ -1,0 +1,40 @@
+
+<div class="container">
+    <br>
+    <h4>Consulta del Tiempo por Ciudad</h4>
+    <h5>{{ fecha | date: 'dd/MM/yyyy' }}</h5>
+    <div class="col-lg-4 alineacion card bg-light">
+        <form [formGroup]="formulario" (ngSubmit)="consultar()">
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" placeholder="Santiago" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="ciudad">
+              <p class="text-danger" *ngIf="formulario!.get('ciudad')!.invalid && formulario.get('ciudad')!.touched ">Por favor escriba solo letras</p>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label" >Código Ciudad</label>
+              <input type="text" class="form-control" placeholder="CL" id="exampleInputPassword1" formControlName="codigo">
+              <p class="text-danger" *ngIf="formulario!.get('codigo')!.invalid && formulario.get('codigo')!.touched ">Por favor escriba solo letras</p>
+            </div>
+            <button type="submit" class="btn btn-primary">Consultar</button>
+          </form>
+          <p class="text-danger" *ngIf="showError"> {{ mensajeError}} </p>
+    </div>
+
+    <div class="col-lg-5 alineacion1">
+        <div class="card bg-light" >
+            <div class="card-body mb-3 ">
+              <ul>
+                <li>Ciudad:  {{ name | uppercase }}</li>
+                <li>Descripción: {{ descripcion | uppercase }}</li>
+                <li>Temperatura: {{ temperatura }}</li>
+                <li>Humedad: {{ humedad }}</li>
+                <li>Latitud: {{ latitud }}</li>
+                <li>Longitud: {{ longitud }}</li>
+              </ul>
+            </div>
+          </div>
+
+    </div>
+</div>
