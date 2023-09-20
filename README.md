@@ -2,11 +2,11 @@
 
 app de servicio de temperatura.
 
-consumiento api rest de openweather.
+consumiento api rest de openweathermap.
 
-mostrando la descripcion, temperatura, humedad, ciudad, latitud y longitud.
+mostrando la descripcion, temperatura, humedad, ciudad, latitud y longitud, ademas mostrarlo en español.
 
-usando libreria RXJS, HTTP.
+usando libreria RxJS, HTTP.
 
 Usando suscribe.
 
