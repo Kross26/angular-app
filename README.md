@@ -1,12 +1,12 @@
 # AngularApp
 
-app de servicio de temperatura.
+temperature service app.
 
-consumiento api rest de openweathermap.
+openweathermap rest api consumption.
 
-mostrando la descripcion, temperatura, humedad, ciudad, latitud y longitud, ademas mostrarlo en español.
+showing the description, temperature, humidity, city, latitude and longitude, also showing it in Spanish.
 
-usando libreria RxJS, HTTP.
+using RxJS, HTTP library.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
