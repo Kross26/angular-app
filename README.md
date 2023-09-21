@@ -2,7 +2,7 @@
 
 temperature service app.
 
-openweathermap rest api consumption.
+openweathermap api rest
 
 showing the description, temperature, humidity, city, latitude and longitude, also showing it in Spanish.
 
