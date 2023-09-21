@@ -8,8 +8,6 @@ mostrando la descripcion, temperatura, humedad, ciudad, latitud y longitud, adem
 
 usando libreria RxJS, HTTP.
 
-Usando suscribe.
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
 ## Development server
